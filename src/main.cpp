@@ -28,16 +28,16 @@ regex gitRegex(".gitignore|.git$", regex_constants::icase);
 regex cssRegex(".css$", regex_constants::icase);
 regex sassRegex(".scss|sass$", regex_constants::icase);
 regex githubRegex(".github$", regex_constants::icase);
-regex readmeRegex("readme.md|rst", regex_constants::icase);
-regex musicRegex(".mp3|wav|ogg", regex_constants::icase);
-regex videoRegex(".mov|mp4|flv|mkv", regex_constants::icase);
-regex discRegex(".iso|img", regex_constants::icase);
-regex imageRegex(".jpe?g|png|gif", regex_constants::icase);
-regex compressedRegex(".zip|tar|tar.gz|7z|rar", regex_constants::icase);
+regex readmeRegex("readme.md|rst$", regex_constants::icase);
+regex musicRegex(".mp3|wav|ogg$", regex_constants::icase);
+regex videoRegex(".mov|mp4|flv|mkv$", regex_constants::icase);
+regex discRegex(".iso|img$", regex_constants::icase);
+regex imageRegex(".jpe?g|png|gif$", regex_constants::icase);
+regex compressedRegex(".zip|tar|tar.gz|7z|rar$", regex_constants::icase);
+regex pythonRegex(".py$", regex_constants::icase);
 
 string getIcon(string fileName)
 {
-
     if (fileName.ends_with(".cpp"))
         return Color::toString(Color::BLUE) + "";
     else if (fileName.ends_with(".ts"))
@@ -76,6 +76,8 @@ string getIcon(string fileName)
         return Color::toString(Color::RED) + "";
     else if (regex_search(fileName, compressedRegex))
         return Color::toString(Color::YELLOW) + "";
+    else if (regex_search(fileName, pythonRegex))
+        return Color::toString(Color::YELLOW) + "";
     else
     {
         bool isDirectory = !regex_search(fileName, fileRegex);
