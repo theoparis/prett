@@ -7,8 +7,7 @@
 #include <ghc/filesystem.hpp>
 #include <fmt/core.h>
 #include <fmt/core.h>
-#include "ccore/color.h"
-#include "ccore/util.h"
+#include "ccore.h"
 
 using namespace std;
 
