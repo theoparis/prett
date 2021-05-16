@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
     if (subCommand == "ls")
     {
-        string cmd("sh -c \"ls --group-directories-first -1 ");
+        string cmd("sh -c \"ls -1 ");
         for (size_t i = 0; i < args.size(); i++)
         {
             cmd.append(args[i]);
