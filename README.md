@@ -2,7 +2,7 @@
 
 A prettifier for sh commands, inspired by [ptSh](https://github.com/jszczerbinsky/ptSh).
 
-<!-- TODO: add demo gif -->
+![ls command demo](assets/ls.png)
 
 ## Prequisites
 
@@ -19,7 +19,11 @@ cd prett
 ./compile.sh ~/bin # The path to copy the binary to, defaults to ~/bin
 ```
 
-## Compatible Commands
+## Usage
+
+Run `prett sub-command`.
+
+### Compatible Commands
 
 -   `ls`
 
