@@ -8,6 +8,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 
 # gulrak/filesystem
 add_subdirectory(lib/fs)
