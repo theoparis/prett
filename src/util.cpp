@@ -18,15 +18,6 @@ string unquote(string input)
     return input;
 }
 
-string join(char delimiter, vector<string> data)
-{
-    std::ostringstream oss;
-    std::copy(data.begin(), data.end(), std::ostream_iterator<string>(oss, &delimiter));
-
-    std::string result(oss.str());
-    return result;
-}
-
 /*! note: input is assumed to not contain NUL characters
  */
 vector<string> split(char delimiter, string input)
