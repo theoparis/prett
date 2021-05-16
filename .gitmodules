@@ -1,0 +1,9 @@
+[submodule "lib/fs"]
+	path = lib/fs
+	url = https://github.com/gulrak/filesystem
+[submodule "lib/fmt"]
+	path = lib/fmt
+	url = https://github.com/fmtlib/fmt
+[submodule "lib/ccore"]
+	path = lib/ccore
+	url = https://github.com/creepinson/core
