@@ -6,17 +6,18 @@ A prettifier for sh commands, inspired by [ptSh](https://github.com/jszczerbinsk
 
 ## Prequisites
 
--   A font that is capable of displaying nerd icons.
--   CMake, Make, And Git
--   A shell (eg.zsh, bash)
--   A ansi color-compatible terminal (eg. Alacritty).
+- A font that is capable of displaying nerd icons.
+- CMake, Ninja, and a C compiler
+- A shell (eg.zsh, bash)
+- A ansi color-compatible terminal (eg. Alacritty).
 
 ## Building
 
 ```bash
-git clone --recurse-submodules https://github.com/creepinson/prett
+git clone https://github.com/theoparis/prett
 cd prett
-./compile.sh ~/bin # The path to copy the binary to, defaults to ~/bin
+cmake -B build -G Ninja`
+cmake --build build
 ```
 
 ## Usage
@@ -25,7 +26,7 @@ Run `prett sub-command`.
 
 ### Compatible Commands
 
--   `ls`
+- `ls`
 
 ## Shell Aliases
 
